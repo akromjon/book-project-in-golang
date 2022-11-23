@@ -23,7 +23,7 @@ func main() {
 		router.Use(gin.Logger())
 	}
 
-	fmt.Println("Starting server at: ", app.Url+":", app.Port)
+	fmt.Println("Starting server at: " + app.Url + ":" + app.Port)
 
 	router.Run(":" + app.Port)
 
